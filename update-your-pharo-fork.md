@@ -22,10 +22,15 @@ Enter the informations of your fork (your Github username/pharo) and select HTTP
 If this error happens, just ignore it, close all the windows and open Iceberg again:
 ![image](https://user-images.githubusercontent.com/39618015/60344173-368fc480-99b6-11e9-938c-503a1de05a0c.png)
 
-The status of your image can be **_Fetch required_**. In this case, do a **_Fetch_** in the repository:
+The status of your image can be **_Uncommited changes_** or **_Fetch required_**. Follow the option 1 or 2:
+
+1. In the first case, if the status of your image go to **_Uncommited changes_**, you need to do a **_Fetch_** to download your repository data and sincronize it with your local image and go to **Step 2**:
+
+![image](https://user-images.githubusercontent.com/39618015/60344218-53c49300-99b6-11e9-82c6-b05d725cb025.png)
+
+2. In this second case, **_Fetch required_**, do a **_Fetch_** in the repository and follow the next steps:
 
 ![image](https://user-images.githubusercontent.com/39618015/60452215-59c4a900-9c2e-11e9-9409-5c82bc19eb9b.png)
-
 
 Now the new status of your image is **_Detached Working Copy_**. To fix it, go to **_Repair repository_**, select **_Discard image changes_**, select this option to do checkout **_DO NOT CHECKOUT any packages_** and press **_Checkout_** button
 
@@ -54,7 +59,6 @@ This means we are going to update only the local repository, without apply the n
 
 ## Step 3 – Push the updated data to your remote repository 
 
-After your local repositoty be updated with the official repository, you can **_Push_** everything to your own repository:
 ![image](https://user-images.githubusercontent.com/39618015/60344592-30e6ae80-99b7-11e9-93ae-38e69772a8c5.png)
 
 Be sure you are selecting your repository to Push in it. 
