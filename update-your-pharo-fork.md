@@ -12,7 +12,7 @@ This tutorial has 3 steps:
 
 ## Step 1 – Create a new image and sincronize your remote repository
 
-Create a new Pharo Image and open Iceberg. Go to repair repository and chose **_Clone again this repository_**. 
+Create a new Pharo Image and open Iceberg. The status of pharo repository should be **_Local repository missing_**. We need to repair it. Go to **_Repair repository_** and chose **_Clone again this repository_**. 
 Enter the informations of your fork (your Github username/pharo) and select HTTPS:
 
 ![image](https://user-images.githubusercontent.com/39618015/60343940-b9fce600-99b5-11e9-94e3-ea1f26f3c3b7.png)
@@ -22,17 +22,26 @@ Enter the informations of your fork (your Github username/pharo) and select HTTP
 If this error happens, just ignore it, close all the windows and open Iceberg again:
 ![image](https://user-images.githubusercontent.com/39618015/60344173-368fc480-99b6-11e9-938c-503a1de05a0c.png)
 
-Now you need to do a **_Fetch_** to download your repository data and sincronize it with your local image:
-![image](https://user-images.githubusercontent.com/39618015/60344218-53c49300-99b6-11e9-82c6-b05d725cb025.png)
+The status of your image can be **_Fetch required_**. In this case, do a **_Fetch_** in the repository:
 
-## Step 2 – Sincronize your local repository with official Pharo repository 
+![image](https://user-images.githubusercontent.com/39618015/60452215-59c4a900-9c2e-11e9-9409-5c82bc19eb9b.png)
+
+
+Now the new status of your image is **_Detached Working Copy_**. To fix it, go to **_Repair repository_**, select **_Discard image changes_**, select this option to do checkout **_DO NOT CHECKOUT any packages_** and press **_Checkout_** button
+
+![image](https://user-images.githubusercontent.com/39618015/60451687-ea9a8500-9c2c-11e9-8682-14e6b085f9b2.png)
+![image](https://user-images.githubusercontent.com/39618015/60451711-fd14be80-9c2c-11e9-8de6-4c4622880dcd.png)
+![image](https://user-images.githubusercontent.com/39618015/60452771-980e9800-9c2f-11e9-9a05-1512a665ef67.png)
+
+## Step 2 – Sincronize your local repository with official Pharo repository
 
 Now you need to create a **_New branch_**, because we need to delete our local branch to load it from the official repository:
+![image](https://user-images.githubusercontent.com/39618015/60453327-29cad500-9c31-11e9-9c5c-4ec293248023.png)
 ![image](https://user-images.githubusercontent.com/39618015/60344288-7fe01400-99b6-11e9-922e-e42f3ebb4c31.png)
 
 Now we are going to delete the local branch:
 Select **_Repository_**, select in local **_Branches_** the branch that you want to update and than delete it. In this case **_Pharo8.0_**:
-![image](https://user-images.githubusercontent.com/39618015/60344382-af8f1c00-99b6-11e9-9106-9d483fb63b4e.png)
+![image](https://user-images.githubusercontent.com/39618015/60453532-b07fb200-9c31-11e9-9afb-33b05561d878.png)
 ![image](https://user-images.githubusercontent.com/39618015/60344406-c6357300-99b6-11e9-8580-ac30fd30c108.png)
 
 Now you can do **_Checkout branch_** in the remote branch. 
@@ -41,7 +50,7 @@ Go to **_Remotes/pharo-project_** and select **_Checkout branch_** in **_Pharo8.
 
 Be sure you are selected this option to do checkout **_DO NOT CHECKOUT any packages_**. 
 This means we are going to update only the local repository, without apply the new changes in the current image:
-![image](https://user-images.githubusercontent.com/39618015/60344535-0f85c280-99b7-11e9-82ce-68962a7e77aa.png)
+![image](https://user-images.githubusercontent.com/39618015/60453766-559a8a80-9c32-11e9-897c-75a5f0146c9c.png)
 
 ## Step 3 – Push the updated data to your remote repository 
 
@@ -50,7 +59,7 @@ After your local repositoty be updated with the official repository, you can **_
 
 Be sure you are selecting your repository to Push in it. 
 Enter your Github login and now you have your Github repository updated with the official Github Pharo Project Repository:
-![image](https://user-images.githubusercontent.com/39618015/60344679-5a9fd580-99b7-11e9-9829-41a2542de860.png)
+![image](https://user-images.githubusercontent.com/39618015/60454247-a5c61c80-9c33-11e9-8c45-e3f502cbc8b6.png)
 
 The status of repository in Iceberg is **_Uncommited changes_**, but you don't need commit it.
 Your Github repository already is update:
