@@ -2,12 +2,12 @@
 
 **Scenario**: You have a fork of Github Pharo Project and you would like to update it with the official repository [github.com/pharo-project/pharo](github.com/pharo-project/pharo). 
 In this tutorial you will learn how to update a *Branch* in you repository. 
-If you want to update all your repository, just repeate this procedure to all the branchs.  
+If you want to update all your repository, just repeate this procedure to all the branches.  
 
 This tutorial has 3 steps: 
 
 1. Create a new image and sincronize your remote repository
-2. Sincronize your local repository with official Pharo repository
+2. Synchronize your local repository with official Pharo repository
 3. Push the updated data to your remote repository 
 
 ## Step 1 – Create a new image and sincronize your remote repository
@@ -38,7 +38,7 @@ Now the new status of your image is **_Detached Working Copy_**. To fix it, go t
 ![image](https://user-images.githubusercontent.com/39618015/60451711-fd14be80-9c2c-11e9-8de6-4c4622880dcd.png)
 ![image](https://user-images.githubusercontent.com/39618015/60452771-980e9800-9c2f-11e9-9a05-1512a665ef67.png)
 
-## Step 2 – Sincronize your local repository with official Pharo repository
+## Step 2 – Synchronize your local repository with official Pharo repository
 
 Now you need to create a **_New branch_**, because we need to delete our local branch to load it from the official repository:
 ![image](https://user-images.githubusercontent.com/39618015/60453327-29cad500-9c31-11e9-9c5c-4ec293248023.png)
