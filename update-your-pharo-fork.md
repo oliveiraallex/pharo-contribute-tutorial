@@ -13,11 +13,11 @@ You don't need update your fork often. But sometimes, you would like to update y
 
 This procedure has 3 steps: 
 
-1. [Create a new image and sincronize your remote repository](step-1---create-a-new-image-and-sincronize-your-remote-repository)
-2. [Synchronize your local repository with official Pharo repository](step-2-–-synchronize-your-local-repository-with-official-pharo-repository)
-3. [Push the updated data to your remote repository](step-3---push-the-updated-data-to-your-remote-repository)
+1. [Create a new image and sincronize your remote repository](#step-1-create-a-new-image-and-sincronize-your-remote-repository)
+2. [Synchronize your local repository with official Pharo repository](#step-2-synchronize-your-local-repository-with-official-pharo-repository)
+3. [Push the updated data to your remote repository](#step-3-push-the-updated-data-to-your-remote-repository)
 
-## Step 1 – Create a new image and sincronize your remote repository
+## Step 1 Create a new image and sincronize your remote repository
 
 Create a new Pharo Image and open Iceberg. The status of pharo repository should be **_Local repository missing_**. We need to repair it. Go to **_Repair repository_** and chose **_Clone again this repository_**. 
 Enter the informations of your fork (your Github username/pharo) and select HTTPS:
@@ -45,7 +45,7 @@ Now the new status of your image is **_Detached Working Copy_**. To fix it, go t
 ![image](https://user-images.githubusercontent.com/39618015/60451711-fd14be80-9c2c-11e9-8de6-4c4622880dcd.png)
 ![image](https://user-images.githubusercontent.com/39618015/60452771-980e9800-9c2f-11e9-9a05-1512a665ef67.png)
 
-## Step 2 – Synchronize your local repository with official Pharo repository
+## Step 2 Synchronize your local repository with official Pharo repository
 
 Now you need to create a **_New branch_**, because we need to delete our local branch to load it from the official repository:
 ![image](https://user-images.githubusercontent.com/39618015/60453327-29cad500-9c31-11e9-9c5c-4ec293248023.png)
@@ -64,7 +64,7 @@ Be sure you are selected this option to do checkout **_DO NOT CHECKOUT any packa
 This means we are going to update only the local repository, without apply the new changes in the current image:
 ![image](https://user-images.githubusercontent.com/39618015/60453766-559a8a80-9c32-11e9-897c-75a5f0146c9c.png)
 
-## Step 3 – Push the updated data to your remote repository 
+## Step 3 Push the updated data to your remote repository 
 
 ![image](https://user-images.githubusercontent.com/39618015/60344592-30e6ae80-99b7-11e9-93ae-38e69772a8c5.png)
 
@@ -77,4 +77,17 @@ Your Github repository already is update:
 ![image](https://user-images.githubusercontent.com/39618015/60344707-6f7c6900-99b7-11e9-8b18-36238107224f.png)
 ![image](https://user-images.githubusercontent.com/39618015/60344735-80c57580-99b7-11e9-9098-349a9d4b0598.png)
 
+# Command line
 
+### Update your Pharo fork using command line
+
+You can also update your Pharo fork using command line in 6 commands. You need to have a git command line installed.
+
+1. $ git clone https://github.com/YOUR-USER-NAME/pharo.git
+2. $ cd Pharo
+3. $ git remote add pharo https://github.com/pharo-project/pharo.git 
+4. $ git fetch pharo
+5. $ git pull pharo Pharo8.0
+6. $ git push origin Pharo8.0
+
+![image](https://user-images.githubusercontent.com/39618015/60595538-7fc18900-9da7-11e9-8cf2-a454e1ee220a.png)
