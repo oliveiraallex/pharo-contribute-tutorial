@@ -1,14 +1,21 @@
 # Update your Pharo fork with the official repository
 
 **Scenario**: You have a fork of Github Pharo Project and you would like to update it with the official repository [github.com/pharo-project/pharo](github.com/pharo-project/pharo). 
-In this tutorial you will learn how to update a *Branch* in you repository. 
-If you want to update all your repository, just repeate this procedure to all the branches.  
 
-This tutorial has 3 steps: 
+You don't need update your fork often. But sometimes, you would like to update your fork with the oficial Pharo repository and you can do this very easy using Iceberg or using the command line. This tutorial you will learn how to update a *Branch* in you repository. If you want to update all your repository, just repeate this procedure to all the branches.
 
-1. Create a new image and sincronize your remote repository
-2. Synchronize your local repository with official Pharo repository
-3. Push the updated data to your remote repository 
+1. Updating your fork using [Iceberg](#iceberg)
+2. Updating your fork using [Command line](#command-line)
+
+# Iceberg
+
+### Update your Pharo fork using Iceberg in 3 steps
+
+This procedure has 3 steps: 
+
+1. [Create a new image and sincronize your remote repository](step-1---create-a-new-image-and-sincronize-your-remote-repository)
+2. [Synchronize your local repository with official Pharo repository](step-2-–-synchronize-your-local-repository-with-official-pharo-repository)
+3. [Push the updated data to your remote repository](step-3---push-the-updated-data-to-your-remote-repository)
 
 ## Step 1 – Create a new image and sincronize your remote repository
 
@@ -69,3 +76,5 @@ The status of repository in Iceberg is **_Uncommited changes_**, but you don't n
 Your Github repository already is update:
 ![image](https://user-images.githubusercontent.com/39618015/60344707-6f7c6900-99b7-11e9-8b18-36238107224f.png)
 ![image](https://user-images.githubusercontent.com/39618015/60344735-80c57580-99b7-11e9-9098-349a9d4b0598.png)
+
+
